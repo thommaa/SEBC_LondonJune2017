@@ -16,17 +16,19 @@ sudo service mysqld start
 # mysql root password: clouderaSEBC
 mysql -u root -p
 CREATE DATABASE amon DEFAULT CHARACTER SET utf8;
-grant all on amon.* TO 'user'@'%' IDENTIFIED BY 'password';
+grant all on amon.* TO 'amon'@'%' IDENTIFIED BY 'amon_password';
 CREATE DATABASE rman DEFAULT CHARACTER SET utf8;
-grant all on rman.* TO 'user'@'%' IDENTIFIED BY 'password';
+grant all on rman.* TO 'rman'@'%' IDENTIFIED BY 'rman_password';
 CREATE DATABASE metastore DEFAULT CHARACTER SET utf8;
-grant all on metastore.* TO 'user'@'%' IDENTIFIED BY 'password';
+grant all on metastore.* TO 'hive'@'%' IDENTIFIED BY 'hive_password';
 CREATE DATABASE sentry DEFAULT CHARACTER SET utf8;
-grant all on sentry.* TO 'user'@'%' IDENTIFIED BY 'password';
+grant all on sentry.* TO 'sentry'@'%' IDENTIFIED BY 'sentry_password';
 CREATE DATABASE nav DEFAULT CHARACTER SET utf8;
-grant all on nav.* TO 'user'@'%' IDENTIFIED BY 'password';
+grant all on nav.* TO 'nav'@'%' IDENTIFIED BY 'nav_password';
 CREATE DATABASE navms DEFAULT CHARACTER SET utf8;
-grant all on navms.* TO 'user'@'%' IDENTIFIED BY 'password';
+grant all on navms.* TO 'navms'@'%' IDENTIFIED BY 'navms_password';
+
+# create table for cmf
 
 # install connector jar
 wget https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.42.tar.gz
