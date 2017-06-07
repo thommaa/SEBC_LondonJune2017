@@ -5,6 +5,8 @@ sudo su - root
 yum install nscd -y
 service ntpd start
 service nscd start
+chkconfig ntpd on
+chkconfig nscd on
 
 # https://tecadmin.net/resize-root-ebs-volume-on-aws-linux-instance/
 
@@ -28,6 +30,7 @@ sysctl -w vm.swappiness=1
 echo 'vm.swappiness = 1' >> /etc/sysctl.conf
 # hugepage during runtime and after reboot
 echo never > /sys/kernel/mm/transparent_hugepage/enabled
+echo 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' >> /etc/rc.local
 
 reboot now
 ```

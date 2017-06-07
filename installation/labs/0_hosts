@@ -5,3 +5,9 @@
 172.31.16.37  ip-172-31-16-37.eu-west-1.compute.internal  ip-172-31-16-37  host2
 172.31.21.20  ip-172-31-21-20.eu-west-1.compute.internal  ip-172-31-21-20  host3
 172.31.24.30  ip-172-31-24-30.eu-west-1.compute.internal  ip-172-31-24-30  host4
+# ip data for copy from external cluster -> @leonceda
+54.154.13.129  172.31.5.113  ip-172-31-5-113.eu-west-1.compute.internal ip-172-31-5-113
+176.34.129.78  172.31.6.121  ip-172-31-6-121.eu-west-1.compute.internal ip-172-31-6-121
+54.154.101.155  172.31.8.154  ip-172-31-8-154.eu-west-1.compute.internal ip-172-31-8-154
+54.229.232.172  172.31.0.153  ip-172-31-0-153.eu-west-1.compute.internal ip-172-31-0-153
+54.194.17.154  172.31.13.255  ip-172-31-13-255.eu-west-1.compute.internal ip-172-31-13-255
