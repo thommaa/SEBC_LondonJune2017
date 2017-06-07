@@ -1,11 +1,12 @@
 Execute on your local machine to copy to AWS
-''
-# scp zip file to local drive in /tmp folder
-scp -i /Users/thomma/Downloads/SEBC-thomma.pem Downlds/SEBC-master.zip ec2-user@52.19.74.225:/tmp/
-''
+
+```bash
+#scp zip file to local drive in /tmp folder
+scp Downloads/SEBC-master.zip ec2-user@52.19.74.225:/tmp/
+````
 
 Connect per SSH to cluster node (where file was copied)
-'''
+```bash
 # switch into hdfs user
 sudo su - hdfs
 hdfs dfs -mkdir precious
@@ -20,4 +21,4 @@ hdfs dfs -rm -f -R precious
 hdfs dfs -rm precious/SEBC-master.zip
 # restore file by coping from snapshot / alternative in CM UI
 hdfs dfs -cp /user/hdfs/precious/.snapshot/sebc-hdfs-test/SEBC-master.zip /user/hdfs/precious
-'''
+```

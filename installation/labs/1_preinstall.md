@@ -1,5 +1,5 @@
 ** preparation of the node after creation**
-```
+```bash
 sudo su - root
 
 yum install nscd -y
@@ -49,17 +49,22 @@ mount
 
 3. Show the reserve space of any non-root, `ext`-based volumes
     * XFS volumes do not maintain reserve space
-    lsblk
+`lsblk`
 4. Disable transparent hugepage support
-echo never > /sys/kernel/mm/transparent_hugepage/enabled
+`echo never > /sys/kernel/mm/transparent_hugepage/enabled`
 
 5. List your network interface configuration
-ifconfig
+`ifconfig`
 
 6. List forward and reverse host lookups using `getent` or `nslookup`
 
 
 7. Show the <code>nscd</code> service is running
+```
 service nscd status
+```
+
 8. Show the <code>ntpd</code> service is running<br>
+```
 service ntpd status
+```
