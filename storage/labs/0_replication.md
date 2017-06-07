@@ -80,6 +80,10 @@ With AWS configured completely open on public IPs and adding the mapping of the 
 		BYTESCOPIED=500000000
 		BYTESEXPECTED=500000000
 		COPY=4
+```
+
+And after successful copy follows the verification
+```bash
 [hdfs@ip-172-31-29-116 ~]$ hdfs fsck /user/hdfs/teragen-leonceda -files -blocks
 Connecting to namenode via http://ip-172-31-16-37.eu-west-1.compute.internal:50070
 FSCK started by hdfs (auth:SIMPLE) from /172.31.29.116 for path /user/hdfs/teragen-leonceda at Tue Jun 06 12:13:22 EDT 2017
