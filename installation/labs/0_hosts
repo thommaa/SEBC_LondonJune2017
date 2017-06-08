@@ -1,6 +1,6 @@
 127.0.0.1       localhost localhost.localdomain localhost4 localhost4.localdomain4
 ::1             localhost localhost.localdomain localhost6 localhost6.localdomain6
-172.31.28.183   ip-172-31-28-183.eu-west-1.compute.internal ip-172-31-28-183 cloudera-manager
+172.31.28.183   ip-172-31-28-183.eu-west-1.compute.internal ip-172-31-28-183 cloudera-manager kerberos.example.com
 172.31.29.116   ip-172-31-29-116.eu-west-1.compute.internal ip-172-31-29-116 host1
 172.31.16.37    ip-172-31-16-37.eu-west-1.compute.internal  ip-172-31-16-37  host2
 172.31.21.20    ip-172-31-21-20.eu-west-1.compute.internal  ip-172-31-21-20  host3
