@@ -4,8 +4,11 @@
   * Under Administration - Settings - Kerberos filter group
   `<CM_Host>/cmf/settings#filterdisplayGroup=Kerberos`
 * Which CDH service(s) host a property for enabling Kerberos authentication?
-  * HDFS
-  * Zookeeper
+  * hdfs
+  * mapred
+  * yarn
+  * oozie
+  * hue
 * How do you upgrade the CM agents?
   * updating the repository file and then the packages
   * or upgrade wizard that is invoked when you connect to the Admin Console (after update)
