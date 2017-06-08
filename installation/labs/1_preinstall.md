@@ -31,6 +31,8 @@ echo 'vm.swappiness = 1' >> /etc/sysctl.conf
 # hugepage during runtime and after reboot
 echo never > /sys/kernel/mm/transparent_hugepage/enabled
 echo 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' >> /etc/rc.local
+echo never > /sys/kernel/mm/transparent_hugepage/defrag
+echo 'echo never > /sys/kernel/mm/transparent_hugepage/defrag' >> /etc/rc.local
 
 reboot now
 ```

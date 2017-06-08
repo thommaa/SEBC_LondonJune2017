@@ -1,10 +1,10 @@
 **External IPs**
 ```
-34.253.175.226 # Cloudera-Manager
-52.31.247.152  # Host1 - MySQL-replication-Server
-54.76.238.49   # Host2 - NameNode
-34.249.145.127 # Host3 - NameNode
-52.209.109.85  # Host4 - Hive
+52.214.11.60   # Cloudera-Manager
+52.49.21.251   # Host1 - MySQL-replication-Server
+54.72.160.242  # Host2 - NameNode
+34.253.122.28  # Host3 - NameNode
+34.252.224.82  # Host4 - Hive
 ```
 
 **Internal IPs**
