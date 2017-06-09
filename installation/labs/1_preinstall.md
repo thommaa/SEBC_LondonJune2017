@@ -36,6 +36,20 @@ echo 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' >> /etc/rc.local
 echo never > /sys/kernel/mm/transparent_hugepage/defrag
 echo 'echo never > /sys/kernel/mm/transparent_hugepage/defrag' >> /etc/rc.local
 
+# disable ip6v
+cat >> /etc/sysctl.conf <<EOF
+net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+EOF
+
+sysctl -p
+service iptables stop
+service ip6tables stop
+chkconfig ip6tables off
+chkconfig iptables off
+
+sed -i 's/SELINUX=.*/SELINUX=disabled/' /etc/sysconfig/selinux
+
 reboot now
 ```
 
