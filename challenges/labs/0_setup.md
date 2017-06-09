@@ -50,22 +50,18 @@ tmpfs           7.3G     0  7.3G   0% /dev/shm
   `yum repolist enabled`
   ```
   [root@ip-172-31-40-167 ~]# yum repolist enabled
-  Loaded plugins: amazon-id, rhui-lb, security
-  rhui-REGION-client-config-server-6                                                                                                            | 2.9 kB     00:00     
-  rhui-REGION-rhel-server-releases                                                                                                              | 3.5 kB     00:00     
-  rhui-REGION-rhel-server-releases-optional                                                                                                     | 3.5 kB     00:00     
-  rhui-REGION-rhel-server-rh-common                                                                                                             | 3.8 kB     00:00     
-  rhui-REGION-rhel-server-rhscl                                                                                                                 | 3.5 kB     00:00     
-  repo id                                                             repo name                                                                                  status
-  rhui-REGION-client-config-server-6                                  Red Hat Update Infrastructure 2.0 Client Configuration Server 6                                 7
-  rhui-REGION-rhel-server-releases                                    Red Hat Enterprise Linux Server 6 (RPMs)                                                   19,554
-  rhui-REGION-rhel-server-releases-optional                           Red Hat Enterprise Linux Server 6 Optional (RPMs)                                          11,247
-  rhui-REGION-rhel-server-rh-common                                   Red Hat Enterprise Linux Server 6 RH Common (RPMs)                                            129
-  rhui-REGION-rhel-server-rhscl                                       Red Hat Enterprise Linux Server 6 RHSCL (RPMs)                                              8,234
-  repolist: 39,171
+Loaded plugins: amazon-id, rhui-lb, security
+repo id                                          repo name                                                              status
+rhui-REGION-client-config-server-6               Red Hat Update Infrastructure 2.0 Client Configuration Server 6             7
+rhui-REGION-rhel-server-releases                 Red Hat Enterprise Linux Server 6 (RPMs)                               19,554
+rhui-REGION-rhel-server-releases-optional        Red Hat Enterprise Linux Server 6 Optional (RPMs)                      11,247
+rhui-REGION-rhel-server-rh-common                Red Hat Enterprise Linux Server 6 RH Common (RPMs)                        129
+rhui-REGION-rhel-server-rhscl                    Red Hat Enterprise Linux Server 6 RHSCL (RPMs)                          8,234
+repolist: 39,171
   ```
 * Creation of users
-  ```
+  ```bash
+  # defining the group ids to a consistent value across the cluster
   sudo groupadd -g 2010 conservative
   sudo groupadd -g 3010 labour
   sudo useradd -u 2000 -g conservative theresa
