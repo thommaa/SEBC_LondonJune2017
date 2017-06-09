@@ -52,7 +52,8 @@ tmpfs           7.3G     0  7.3G   0% /dev/shm
 ```
 * List the command and output for yum repolist enabled
   `yum repolist enabled`
-  ```
+  Output:
+```
 [root@ip-172-31-40-167 ~]# yum repolist enabled
 Loaded plugins: amazon-id, rhui-lb, security
 repo id                                          repo name                                                              status
@@ -62,7 +63,7 @@ rhui-REGION-rhel-server-releases-optional        Red Hat Enterprise Linux Server
 rhui-REGION-rhel-server-rh-common                Red Hat Enterprise Linux Server 6 RH Common (RPMs)                        129
 rhui-REGION-rhel-server-rhscl                    Red Hat Enterprise Linux Server 6 RHSCL (RPMs)                          8,234
 repolist: 39,171
-  ```
+```
 
 * Creation of users
 ```bash
