@@ -8,6 +8,8 @@ service nscd start
 chkconfig ntpd on
 chkconfig nscd on
 
+yum update -y
+
 # https://tecadmin.net/resize-root-ebs-volume-on-aws-linux-instance/
 
 fdisk -uc /dev/xvda << EOF

@@ -34,6 +34,7 @@ grant all on navms.* TO 'navms'@'%' IDENTIFIED BY 'navms_password';
 wget https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.42.tar.gz
 tar zxvf mysql-connector-java-5.1.42.tar.gz --strip=1 mysql-connector-java-5.1.42/mysql-connector-java-5.1.42-bin.jar
 cp mysql-connector-java-5.1.42-bin.jar /usr/share/java/mysql-connector-java.jar
+rm -f mysql-connector-java-5.1.42-bin.jar mysql-connector-java-5.1.42.tar.gz
 # copy via ssh to /tmp for other hosts
 cp /tmp/mysql-connector-java-5.1.42-bin.jar /usr/share/java/mysql-connector-java.jar
 
@@ -53,10 +54,7 @@ CHANGE MASTER TO MASTER_HOST='172.31.28.183', MASTER_USER='root', MASTER_PASSWOR
 START SLAVE;
 
 
-
-
-
-
+```
 mysql> START SLAVE;
 Query OK, 0 rows affected (0.00 sec)
 
@@ -103,3 +101,4 @@ Master_SSL_Verify_Server_Cert: No
   Replicate_Ignore_Server_Ids:
              Master_Server_Id: 1
 1 row in set (0.00 sec)
+```
