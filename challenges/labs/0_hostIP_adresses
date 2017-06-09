@@ -1,0 +1,19 @@
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+54.76.215.255  172.31.40.167  ip-172-31-40-167.eu-west-1.compute.internal cloudera-manager kerberos.example.com
+34.249.64.144  172.31.33.70   ip-172-31-33-70.eu-west-1.compute.internal  host1
+52.50.32.109   172.31.44.94   ip-172-31-44-94.eu-west-1.compute.internal  host2
+34.248.16.4    172.31.33.176  ip-172-31-33-176.eu-west-1.compute.internal host3
+34.250.254.120 172.31.34.150  ip-172-31-34-150.eu-west-1.compute.internal host4
+
+echo
+
+cd /Users/thomma/SEBC
+ssh -i SEBC-thomma.pem ec2-user@54.76.215.255
+ssh -i SEBC-thomma.pem ec2-user@34.249.64.144
+ssh -i SEBC-thomma.pem ec2-user@52.50.32.109
+ssh -i SEBC-thomma.pem ec2-user@34.248.16.4
+ssh -i SEBC-thomma.pem ec2-user@34.250.254.120
+
+
+scp -i SEBC-thomma.pem ec2-user@54.76.215.255:/etc/yum.repos.d/mysql-community.repo .
