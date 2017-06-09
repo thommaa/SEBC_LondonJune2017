@@ -17,6 +17,7 @@ xvda    202:0    0  100G  0 disk
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/xvda1       99G  2.3G   92G   3% /
 tmpfs           7.3G     0  7.3G   0% /dev/shm
+
 [root@ip-172-31-33-70 ~]# lsblk && df -h
 NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 xvda    202:0    0  100G  0 disk
@@ -24,6 +25,7 @@ xvda    202:0    0  100G  0 disk
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/xvda1       99G  2.3G   92G   3% /
 tmpfs           7.3G     0  7.3G   0% /dev/shm
+
 [root@ip-172-31-44-94 ~]# lsblk && df -h
 NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 xvda    202:0    0  100G  0 disk
@@ -31,6 +33,7 @@ xvda    202:0    0  100G  0 disk
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/xvda1       99G  2.3G   92G   3% /
 tmpfs           7.3G     0  7.3G   0% /dev/shm
+
 [root@ip-172-31-33-176 ~]# lsblk && df -h
 NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 xvda    202:0    0  100G  0 disk
@@ -38,6 +41,7 @@ xvda    202:0    0  100G  0 disk
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/xvda1       99G  2.3G   92G   3% /
 tmpfs           7.3G     0  7.3G   0% /dev/shm
+
 [root@ip-172-31-34-150 ~]# lsblk && df -h
 NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 xvda    202:0    0  100G  0 disk
@@ -49,7 +53,7 @@ tmpfs           7.3G     0  7.3G   0% /dev/shm
 * List the command and output for yum repolist enabled
   `yum repolist enabled`
   ```
-  [root@ip-172-31-40-167 ~]# yum repolist enabled
+[root@ip-172-31-40-167 ~]# yum repolist enabled
 Loaded plugins: amazon-id, rhui-lb, security
 repo id                                          repo name                                                              status
 rhui-REGION-client-config-server-6               Red Hat Update Infrastructure 2.0 Client Configuration Server 6             7
@@ -59,14 +63,15 @@ rhui-REGION-rhel-server-rh-common                Red Hat Enterprise Linux Server
 rhui-REGION-rhel-server-rhscl                    Red Hat Enterprise Linux Server 6 RHSCL (RPMs)                          8,234
 repolist: 39,171
   ```
+
 * Creation of users
-  ```bash
-  # defining the group ids to a consistent value across the cluster
-  sudo groupadd -g 2010 conservative
-  sudo groupadd -g 3010 labour
-  sudo useradd -u 2000 -g conservative theresa
-  sudo useradd -u 3000 -g labour jeremy
-  ```
+```bash
+# defining the group ids to a consistent value across the cluster
+sudo groupadd -g 2010 conservative
+sudo groupadd -g 3010 labour
+sudo useradd -u 2000 -g conservative theresa
+sudo useradd -u 3000 -g labour jeremy
+```
 
 * Listing of `/etc/passwd`
 ```
