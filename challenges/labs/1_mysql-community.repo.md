@@ -1,3 +1,5 @@
+# Repo file with markup 
+
 [mysql-connectors-community]
 name=MySQL Connectors Community
 baseurl=http://repo.mysql.com/yum/mysql-connectors-community/el/6/$basearch/

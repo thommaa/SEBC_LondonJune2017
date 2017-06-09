@@ -1,18 +1,18 @@
-MySQL server installation:
+# MySQL server installation:
 
-Hostname:
+# Hostname:
 ```
 [root@ip-172-31-40-167 ~]# hostname
 ip-172-31-40-167.eu-west-1.compute.internal
 ```
 
-MySQL version
+# MySQL version
 ```
 [root@ip-172-31-40-167 ~]# mysqld --version
 mysqld  Ver 5.5.56-log for Linux on x86_64 (MySQL Community Server (GPL))
 ```
 
-MySQL databases Listing
+# MySQL databases Listing
   connect using `mysql -u root -p`
 ```
 mysql> show databases;
@@ -33,7 +33,7 @@ mysql> show databases;
 
 ```
 
-Apendix:
+# Apendix:
 
 Creation of tables and users:
 ```

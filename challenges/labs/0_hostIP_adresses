@@ -6,7 +6,9 @@
 34.248.16.4    172.31.33.176  ip-172-31-33-176.eu-west-1.compute.internal host3
 34.250.254.120 172.31.34.150  ip-172-31-34-150.eu-west-1.compute.internal host4
 
-echo
+### end of /etc/hosts file ###
+
+# local commands for connections
 
 cd /Users/thomma/SEBC
 ssh -i SEBC-thomma.pem ec2-user@54.76.215.255
